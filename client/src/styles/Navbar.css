@@ -1,0 +1,47 @@
+.navbar-container {
+  height: 60px;
+  width: 95%;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 20px;
+  box-shadow: 0px 3px 3px 1px black;
+  z-index: 1000000;
+}
+
+.logo-image {
+  height: 30px;
+  width: auto;
+  position: relative;
+}
+
+.navbar-data {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  h1 {
+    font-weight: 500;
+  }
+  .link-to {
+    color: #808080;
+    font-size: 20px;
+    text-decoration: none;
+    &:hover {
+      color: #4e4e4e;
+    }
+  }
+}
+
+.join-button {
+  padding: 5px 20px;
+  border: 0;
+  background-color: #925df8;
+  color: white;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
