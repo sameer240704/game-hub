@@ -7,10 +7,32 @@ i18n
   .use(initReactI18next)
   .init({
     debug: true,
-    lng: "en",
+    lng: "fr",
     resources: {
-      en: {},
-      hi: {},
-      fr: {},
+      en: {
+        translation: {
+          line: "Language Translator",
+        },
+      },
+      hi: {
+        translation: {
+          line: "भाषा अनुवादक",
+        },
+      },
+      fr: {
+        translation: {
+          line: "Traducteur de la langue",
+        },
+      },
+      es: {
+        translation: {
+          line: "Traductor de idiomas",
+        },
+      },
+      cn: {
+        translation: {
+          line: "语言翻译",
+        },
+      },
     },
   });

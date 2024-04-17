@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/logo.png";
 import { navbarData } from "../../data/navbarData";
+import LanguageButton from "../minor-components/language-button";
 import "../../styles/Navbar.css";
 
 const Navbar = () => {
@@ -17,8 +18,10 @@ const Navbar = () => {
           </h1>
         ))}
       </div>
-
-      <button className="join-button">Join Now</button>
+      <div className="end-container">
+        <LanguageButton />
+        <button className="join-button">Join Now</button>
+      </div>
     </div>
   );
 };
