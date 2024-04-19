@@ -7,7 +7,7 @@ i18n
   .use(initReactI18next)
   .init({
     debug: true,
-    lng: "fr",
+    lng: "",
     resources: {
       en: {
         translation: {
