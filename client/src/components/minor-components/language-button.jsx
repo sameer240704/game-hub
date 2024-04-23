@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Flag from "react-flagkit";
 import { languages } from "../../data/navbarData";
-import { HiLanguage } from "react-icons/hi2";
+import { MdLanguage } from "react-icons/md";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import "../../styles/Navbar.css";
@@ -26,8 +26,7 @@ const LanguageButton = () => {
   return (
     <>
       <div className="language-button" onClick={openLanguageButton}>
-        <HiLanguage className="icon" />
-        <h3 className="current-language">{currentLanguage}</h3>
+        <MdLanguage className="icon" />
         {!isOpen ? (
           <FaChevronDown className="chevron-icons" />
         ) : (

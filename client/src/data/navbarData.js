@@ -4,12 +4,16 @@ export const navbarData = [
     route: "/",
   },
   {
-    name: "Artists",
-    route: "/artists",
+    name: "All games",
+    route: "/all games",
   },
   {
-    name: "Contact",
-    route: "/contact",
+    name: "Arcade",
+    route: "/arcade",
+  },
+  {
+    name: "Memory",
+    route: "/memory",
   },
 ];
 
