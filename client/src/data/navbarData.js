@@ -12,8 +12,8 @@ export const navbarData = [
     route: "/arcade",
   },
   {
-    name: "Memory",
-    route: "/memory",
+    name: "Action",
+    route: "/action",
   },
 ];
 

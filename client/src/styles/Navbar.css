@@ -23,6 +23,7 @@
   border-radius: 10px;
   position: relative;
   box-shadow: 2px 3px 0px #3a067c;
+  cursor: pointer;
   .controller {
     height: 30px;
     width: 30px;
@@ -34,8 +35,17 @@
     height: 30px;
     width: 30px;
     color: #fbd800;
-    top: 6px;
-    left: 6px;
+    top: 6.5px;
+    left: 6.5px;
+    z-index: 1;
+  }
+  .controller3 {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    color: #7928bf;
+    top: 5.5px;
+    left: 5.5px;
     z-index: 1;
   }
 }
@@ -48,8 +58,8 @@
     font-weight: 800;
   }
   .link-to {
-    color: #808080;
-    font-size: 16px;
+    color: #000;
+    font-size: 18px;
     text-decoration: none;
     &:hover {
       color: #7928bf;
@@ -100,8 +110,7 @@
   left: 94%;
   border-radius: 10px;
   background-color: #7928bf;
-  border: 1px solid black;
-  box-shadow: 3px 3px 0px #c90496;
+  box-shadow: 3px 5px 0px #c90496;
   padding: 2px 0px;
 }
 

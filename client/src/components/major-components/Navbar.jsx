@@ -13,6 +13,7 @@ const Navbar = () => {
       <div className="logo-icon">
         <FaGamepad className="controller" />
         <FaGamepad className="controller2" />
+        <FaGamepad className="controller3" />
       </div>
       <div className="end-container">
         <div className="navbar-data">
