@@ -7,7 +7,7 @@
   box-sizing: border-box;
   font-size: 20px;
   font-family: "Oswald";
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 body {

@@ -2,7 +2,6 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 // import ReactFlow, { Background, BackgroundVariant } from "reactflow";
 import GridLines from "react-gridlines";
-import RockPaperScissors from "./game-pages/RockPaperScissors";
 import MainImage from "../assets/MainImage.png";
 import "../styles/LandingPage.css";
 import GameCard from "../components/major-components/GameCard";
