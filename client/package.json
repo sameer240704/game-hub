@@ -10,9 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "framer-motion": "^11.1.7",
     "i18next": "^23.11.2",
     "i18next-browser-languagedetector": "^7.2.1",
     "react": "^18.2.0",
+    "react-div-100vh": "^0.7.0",
     "react-dom": "^18.2.0",
     "react-dropdown": "^1.11.0",
     "react-flagkit": "^2.0.4",

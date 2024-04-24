@@ -1,0 +1,319 @@
+/***** Alert *****/
+.Alert-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Alert-container {
+  max-width: 500px;
+  width: 100%;
+  min-height: 100px;
+  background-color: white;
+  padding: 20px;
+}
+
+.Alert-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.Alert-header > h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.Alert-button--close {
+  border-radius: 0;
+  background-color: white;
+  font-weight: bold;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Alert-button--close {
+  padding: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 5px;
+}
+
+/***** GameBoard *****/
+.GameBoard {
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/***** Header *****/
+.App-header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-bottom: 2px solid black;
+  text-align: center;
+  h2 {
+    font-size: 40px;
+  }
+}
+
+.App-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-icon-container > img {
+  margin: 5px;
+  cursor: pointer;
+}
+
+/***** HelpModal *****/
+.Help-modal--content {
+  text-align: left;
+}
+
+.Help-modal--content > .Row {
+  justify-content: start;
+}
+
+/***** Keyboard *****/
+.keyboard-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0.25em;
+  align-items: center;
+}
+
+.keyboard-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: calc(100% - 0.5em);
+  max-width: 500px;
+}
+
+.keyboard-key {
+  font-weight: bold;
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  min-width: 1.5em;
+  max-width: 3em;
+  flex: 1;
+  height: 55px;
+  border-radius: 0.25em;
+  cursor: pointer;
+  margin: 0.25em;
+  padding: 0.5em;
+  background-color: #d3d6da;
+  text-transform: uppercase;
+  border: none;
+}
+
+.keyboard-spacer {
+  flex: 0.5;
+}
+
+.keyboard-key--utility {
+  font-weight: bold;
+  font-size: x-small;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  border-radius: 0.25em;
+  cursor: pointer;
+  margin: 0.25em;
+  padding: 0.5em;
+  background-color: #d3d6da;
+  max-width: 5em;
+  border: none;
+  flex: 1;
+  text-transform: uppercase;
+}
+
+.keyboard-key:hover {
+  opacity: 0.8;
+}
+
+.keyboard-key--correct {
+  background-color: #6aaa64;
+  color: white;
+}
+
+.keyboard-key--in-word {
+  background-color: #c9b458;
+  color: white;
+}
+
+.keyboard-key--guessed {
+  background-color: #787c7e;
+  color: white;
+}
+
+/***** Modal *****/
+.Modal-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.Modal-container {
+  max-width: 500px;
+  width: 100%;
+  min-height: 100px;
+  background-color: white;
+  padding: 20px;
+}
+
+.Modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+  position: sticky;
+  top: 20px;
+  z-index: 2;
+  background-color: white;
+}
+
+.Modal-header > h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.Modal-button--close {
+  border-radius: 0;
+  background-color: white;
+  font-weight: bold;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 5px;
+}
+
+/***** Row *****/
+.Row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/***** SettingsModal *****/
+.Settings-modal--content {
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid black;
+}
+
+li > div > a {
+  color: black;
+  text-decoration: underline;
+}
+
+/***** Tile *****/
+.Tile {
+  text-transform: capitalize;
+  font-size: x-large;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 55px;
+  max-height: 55px;
+  width: calc((100vw / 5) - 0.5em);
+  height: calc((100vw / 5) - 0.5em);
+  border: 2px solid #d3d6da;
+  margin: 0.1em;
+  background-color: white;
+  color: black;
+}
+
+.Tile--current-row {
+  border: 2px solid #878a8c;
+}
+
+.Tile--guessed {
+  background-color: #787c7e;
+  border: 2px solid #787c7e;
+  color: white;
+}
+
+.Tile--in-word {
+  background-color: #c9b458;
+  border: 2px solid #c9b458;
+  color: white;
+}
+
+.Tile--correct {
+  background-color: #6aaa64;
+  border: 2px solid #6aaa64;
+  color: white;
+}

@@ -10,6 +10,10 @@
   overflow-x: hidden;
 }
 
+body {
+  width: 100vw;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   background-color: #fbd800;

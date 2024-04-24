@@ -1,15 +1,15 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LandingPage } from "./pages";
-import { Navbar } from "./components/major-components";
 import "./App.css";
+import Wordle from "./pages/game-pages/Wordle";
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
         <Routes>
+          <Route path="/wordle" element={<Wordle />} />
           <Route path="/" element={<LandingPage />} />
         </Routes>
       </BrowserRouter>

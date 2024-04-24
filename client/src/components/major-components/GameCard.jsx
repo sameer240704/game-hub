@@ -25,16 +25,19 @@ const GameCard = () => {
                 img={Wordle}
                 game={"Wordle"}
                 downloads={"2.5 million"}
+                link={"/wordle"}
               />
               <CardComponent
                 img={TicTacToe}
                 game={"Tic-Tac-Toe"}
                 downloads={"5.6 million"}
+                link={"/tictactoe"}
               />
               <CardComponent
                 img={Sims}
                 game={"Simulator"}
                 downloads={"3.5 million"}
+                link={"/sims"}
               />
             </div>
           </div>
