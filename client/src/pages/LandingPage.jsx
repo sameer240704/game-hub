@@ -1,11 +1,11 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-// import ReactFlow, { Background, BackgroundVariant } from "reactflow";
 import GridLines from "react-gridlines";
 import MainImage from "../assets/MainImage.png";
 import "../styles/LandingPage.css";
 import GameCard from "../components/major-components/GameCard";
 import Navbar from "../components/major-components/Navbar";
+import { Toaster } from "sonner";
 
 const LandingPage = () => {
   const { t } = useTranslation();

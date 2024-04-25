@@ -1,14 +1,21 @@
 import React from "react";
 import { useState, useRef } from "react";
+import ExitButton from "../../components/minor-components/ExitButton";
 import "../../styles/TicTacToe.css";
 import circle_icon from "../../assets/circle.png";
 import cross_icon from "../../assets/cross.png";
 
 let data = ["", "", "", "", "", "", "", "", ""];
+
 export default function TicTacToe() {
   let [count, setCount] = useState(0);
   let [lock, setLock] = useState(false);
+  const [resetState, setResetState] = useState(false);
   let titleRef = useRef(null);
+
+  const handleReset = () => {
+    setResetState(true);
+  };
 
   const toggle = (e, num) => {
     if (lock) {
@@ -23,8 +30,17 @@ export default function TicTacToe() {
       data[num] = "o";
       setCount(++count);
     }
+    if (resetState) {
+      for (let i = 0; i < 9; i++) {
+        e.target.innerHTML = "";
+        data[i] = "";
+        setCount(0);
+      }
+      setResetState(false);
+    }
     checkWin();
   };
+
   const checkWin = () => {
     if (data[0] === data[1] && data[1] == data[2] && data[2] != "") {
       won(data[2]);
@@ -44,6 +60,7 @@ export default function TicTacToe() {
       won(data[6]);
     }
   };
+
   const won = (winner) => {
     setLock(true);
     if (winner == "x") {
@@ -119,7 +136,12 @@ export default function TicTacToe() {
           ></div>
         </div>
       </div>
-      <button className="resetboard">Reset</button>
+      <div className="resetboard-container">
+        <button className="resetboard" onClick={handleReset}>
+          Reset
+        </button>
+      </div>
+      <ExitButton />
     </div>
   );
 }

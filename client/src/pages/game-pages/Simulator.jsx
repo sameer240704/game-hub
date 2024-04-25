@@ -3,8 +3,9 @@ import { Canvas } from "@react-three/fiber";
 import LandingPage from "../../components/game-components/Sims/LandingPage";
 import { SocketIoManager } from "../../components/game-components/Sims/SocketIoManager";
 import { Suspense } from "react";
-import Loader from "../../components/game-components/Sims/Loader";
+import Loader from "../../components/minor-components/Loader";
 import { Toaster } from "sonner";
+import ExitButton from "../../components/minor-components/ExitButton";
 import "../../styles/Simulator.css";
 
 function Simulator() {
@@ -16,6 +17,7 @@ function Simulator() {
           <color attach="background" args={["#ececec"]} />
           <LandingPage />
         </Canvas>
+        <ExitButton />
       </Suspense>
       <Toaster position="top-center" richColors expand={false} />
     </div>

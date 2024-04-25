@@ -1,5 +1,6 @@
 import React from "react";
 import "../../../styles/Wordle.css";
+import { ImCancelCircle } from "react-icons/im";
 
 export default function Alert({ children, title, open, onClose }) {
   if (!open) return null;
@@ -10,7 +11,7 @@ export default function Alert({ children, title, open, onClose }) {
         <div className="Alert-header">
           <h2>{title}</h2>
           <button className="Alert-button--close" onClick={onClose}>
-            X
+            <ImCancelCircle className="Modal-icon" />
           </button>
         </div>
         {children}

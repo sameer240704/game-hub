@@ -1,4 +1,5 @@
 import React from "react";
+import { ImCancelCircle } from "react-icons/im";
 import "../../../styles/Wordle.css";
 
 export default function Modal({ children, title, open, onClose }) {
@@ -10,7 +11,7 @@ export default function Modal({ children, title, open, onClose }) {
         <div className="Modal-header">
           <h2>{title}</h2>
           <button className="Modal-button--close" onClick={onClose}>
-            X
+            <ImCancelCircle className="Modal-icon" />
           </button>
         </div>
         {children}

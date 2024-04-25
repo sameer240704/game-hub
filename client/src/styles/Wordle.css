@@ -53,6 +53,7 @@
   height: 40px;
   min-width: 40px;
   border-radius: 5px;
+  border: 0;
 }
 
 /***** GameBoard *****/
@@ -92,6 +93,7 @@
 
 /***** HelpModal *****/
 .Help-modal--content {
+  margin-top: 40px;
   text-align: left;
 }
 
@@ -186,7 +188,7 @@
 
 /***** Modal *****/
 .Modal-backdrop {
-  /* position: absolute; */
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -238,6 +240,13 @@ button {
   border-radius: 5px;
   margin-top: 10px;
   overflow-y: hidden;
+  border: 0;
+}
+
+.Modal-icon {
+  height: 30px;
+  width: 30px;
+  color: red;
 }
 
 .Modal-button--close {
@@ -260,6 +269,7 @@ button {
 
 /***** SettingsModal *****/
 .Settings-modal--content {
+  margin-top: 20px;
   text-align: left;
 }
 

@@ -1,34 +1,51 @@
 .container {
+  height: 100vh;
+  width: 100vw;
   text-align: center;
 }
 
 .title {
+  height: 100px;
+  width: 100vw;
   font-size: 60px;
   margin-top: 50px;
   display: flex;
   justify-content: center;
 }
+
 .resetboard {
   border: none;
   height: 50px;
   margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  &:active {
+    scale: 0.95;
+  }
 }
-.resetboard:hover {
-  scale: 1.2;
+
+.resetboard-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
+
 .boxes {
   display: flex;
-  height: 180px;
-  width: 180px;
+  height: 150px;
+  width: 150px;
   background-color: #1f3540;
   border: 4px solid #0f1b21;
   border-radius: 12px;
   cursor: pointer;
 }
+
 .board {
   display: flex;
+  justify-content: center;
   margin: auto;
 }
+
 .boxes img {
   margin: 50px 50px;
 }

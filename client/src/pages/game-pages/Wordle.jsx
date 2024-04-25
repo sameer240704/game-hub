@@ -9,6 +9,7 @@ import {
   Alert,
 } from "../../components/game-components";
 import "../../App.css";
+import ExitButton from "../../components/minor-components/ExitButton";
 
 function delayCallback(callback, timeout = 2000) {
   setTimeout(callback, timeout);
@@ -150,6 +151,7 @@ function Wordle() {
         </p>
         <button onClick={resetGame}>Play again</button>
       </Alert>
+      <ExitButton />
     </div>
   );
 }

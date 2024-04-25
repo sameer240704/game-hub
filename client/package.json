@@ -16,6 +16,7 @@
     "i18next": "^23.11.2",
     "i18next-browser-languagedetector": "^7.2.1",
     "jotai": "^2.8.0",
+    "lottie-web": "^5.12.2",
     "react": "^18.2.0",
     "react-confetti-explosion": "^2.1.2",
     "react-div-100vh": "^0.7.0",
