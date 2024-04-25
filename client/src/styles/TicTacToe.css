@@ -1,0 +1,34 @@
+.container {
+  text-align: center;
+}
+
+.title {
+  font-size: 60px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.resetboard {
+  border: none;
+  height: 50px;
+  margin-top: 50px;
+}
+.resetboard:hover {
+  scale: 1.2;
+}
+.boxes {
+  display: flex;
+  height: 180px;
+  width: 180px;
+  background-color: #1f3540;
+  border: 4px solid #0f1b21;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.board {
+  display: flex;
+  margin: auto;
+}
+.boxes img {
+  margin: 50px 50px;
+}
